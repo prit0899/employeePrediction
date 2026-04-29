@@ -1,4 +1,4 @@
-
+[
 
 
 
@@ -121,3 +121,4 @@ uvicorn main:app --reload
 **Prit** — 6 years iOS Developer, expanding into AI Product Engineering.
 
 This project demonstrates end-to-end ownership: ML model training → API deployment → mobile client — the core skill set for **AI Product Engineer** roles.
+](https://github.com/user-attachments/assets/54d61f16-b99c-4b31-9ded-a9e441f04b40)
