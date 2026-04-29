@@ -56,8 +56,10 @@ final class PredictionViewModel: ObservableObject {
         showResult = false
 
         defer { isLoading = false }
+        
+        var components = URLComponents(string: "https://employeepredictionmlmodel.onrender.com/predict")!
 
-        guard var components = URLComponents(string: "http://localhost:8000/predict") else {
+        guard var components = URLComponents(string: baseURLEndpoint) else {
             errorMessage = "Invalid server URL."
             return
         }
@@ -75,7 +77,9 @@ final class PredictionViewModel: ObservableObject {
         }
 
         do {
-            let (data, response) = try await URLSession.shared.data(from: url)
+            let config = URLSessionConfiguration.default
+            config.timeoutIntervalForRequest = 60
+            let (data, response) = try await URLSession(configuration: config).data(from: url)
 
             if let httpResponse = response as? HTTPURLResponse,
                !(200...299).contains(httpResponse.statusCode) {

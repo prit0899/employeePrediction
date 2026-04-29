@@ -144,7 +144,7 @@ struct PredictionFormView: View {
  
         isLoading = true
  
-        var components = URLComponents(string: "http://localhost:8000/predict")!
+        var components = URLComponents(string: baseURLEndpoint)!
         components.queryItems = [
             URLQueryItem(name: "last_evaluation", value: "\(evaluation)"),
             URLQueryItem(name: "number_project", value: "\(projects)"),
@@ -154,7 +154,10 @@ struct PredictionFormView: View {
  
         guard let url = components.url else { return }
  
-        URLSession.shared.dataTask(with: url) { data, _, error in
+        let config = URLSessionConfiguration.default
+        config.timeoutIntervalForRequest = 60
+        
+        URLSession(configuration: config).dataTask(with: url) { data, _, error in
             DispatchQueue.main.async {
                 isLoading = false
  

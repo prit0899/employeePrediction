@@ -19,6 +19,7 @@
 		8451DADF2FA2149C0066BB54 /* employeePredictionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8451DADD2FA2149C0066BB54 /* employeePredictionTests.swift */; };
 		8451DAE32FA2149F0066BB54 /* employeePredictionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8451DAE02FA2149F0066BB54 /* employeePredictionUITests.swift */; };
 		8451DAE42FA2149F0066BB54 /* employeePredictionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8451DAE12FA2149F0066BB54 /* employeePredictionUITestsLaunchTests.swift */; };
+		845DDE4F2FA22B28009E7C5E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845DDE4E2FA22B23009E7C5E /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		8451DADD2FA2149C0066BB54 /* employeePredictionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = employeePredictionTests.swift; sourceTree = "<group>"; };
 		8451DAE02FA2149F0066BB54 /* employeePredictionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = employeePredictionUITests.swift; sourceTree = "<group>"; };
 		8451DAE12FA2149F0066BB54 /* employeePredictionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = employeePredictionUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		845DDE4E2FA22B23009E7C5E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +133,7 @@
 		8451DAC82FA213300066BB54 /* employeePrediction */ = {
 			isa = PBXGroup;
 			children = (
-				8451DADA2FA214360066BB54 /* Extension */,
+				8451DADA2FA214360066BB54 /* Common */,
 				8451DAD92FA2142C0066BB54 /* MVVM */,
 				8451DAD12FA2134F0066BB54 /* Resources */,
 				8451DACF2FA213470066BB54 /* Application */,
@@ -165,12 +167,13 @@
 			path = MVVM;
 			sourceTree = "<group>";
 		};
-		8451DADA2FA214360066BB54 /* Extension */ = {
+		8451DADA2FA214360066BB54 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				845DDE4E2FA22B23009E7C5E /* Constants.swift */,
 				8451DADB2FA2143E0066BB54 /* Extension.swift */,
 			);
-			path = Extension;
+			path = Common;
 			sourceTree = "<group>";
 		};
 		8451DADE2FA2149C0066BB54 /* employeePredictionTests */ = {
@@ -334,6 +337,7 @@
 				8451DACC2FA213300066BB54 /* employeePredictionApp.swift in Sources */,
 				8451DAD42FA213840066BB54 /* PredictionFormView.swift in Sources */,
 				8451DADC2FA214450066BB54 /* Extension.swift in Sources */,
+				845DDE4F2FA22B28009E7C5E /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
