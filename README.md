@@ -1,3 +1,9 @@
+
+
+
+
+
+
 # 📱 Employee Attrition Predictor — iOS App
 
 An iOS application that predicts whether an employee is at risk of leaving an organization, powered by a **Python ML backend** via REST API.
@@ -8,9 +14,12 @@ An iOS application that predicts whether an employee is at risk of leaving an or
 
 ## 📸 What It Does
 
+https://github.com/user-attachments/assets/54d61f16-b99c-4b31-9ded-a9e441f04b40
+
 - User enters employee details (evaluation score, projects, hours, tenure)
 - App calls a **FastAPI ML backend** in real time
 - Displays prediction: **High Risk 🔴** or **Low Risk 🟢** with probability score
+
 
 ---
 
